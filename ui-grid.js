@@ -2866,6 +2866,7 @@ function ($compile, $timeout, $window, $document, gridUtil, uiGridConstants, i18
                 //parent controller scrolls
               }
               else {
+                // Scroll error workaround. See https://github.com/angular-ui/ui-grid/issues/5573  
                 return;
                 event.preventDefault();
                 event.stopPropagation();
